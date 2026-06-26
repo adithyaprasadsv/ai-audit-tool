@@ -20,31 +20,19 @@ Web App Access deployed through GitHub: [text](https://ai-audit-tool-poc.streaml
    text via a RAG chat interface
 
 ## Architecture
-PDF documents
-
+**PDF documents**
         ↓
-
-Text extraction (PyPDF2)
-
+**Text extraction** (PyPDF2)
         ↓
-
-RAG retrieval (ChromaDB + text-embedding-3-small)
-
+**RAG retrieval** (ChromaDB + text-embedding-3-small)
         ↓
-
-LLM extraction (GPT-4o) → findings JSON
-
+**LLM extraction** (GPT-4o) → *findings JSON*
         ↓
-
-Confidence scoring → human review flags
-
+**Confidence scoring** → *human review flags*
         ↓
-
-Weighted compliance scoring (custom model)
-
+**Weighted compliance scoring** (custom model)
         ↓
-
-Streamlit app (4 pages) + PDF report (ReportLab)
+**Streamlit app** (4 pages) + **PDF report** (ReportLab)
 
 ## Controls assessed
 
@@ -80,7 +68,7 @@ cd ai-audit-tool
 pip install -r requirements.txt
 cp .env.example .env  # add your OpenAI API key
 python build_vectorstore.py
-streamlit run app.py
+streamlit run scripts/app.py
 ```
 
 ## Documents assessed
