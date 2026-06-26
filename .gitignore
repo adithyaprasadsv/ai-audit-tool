@@ -5,3 +5,7 @@ __pycache__/
 .env
 *.log
 *.pdf
+docs/
+vectorstore/
+outputs/
+.streamlit/
