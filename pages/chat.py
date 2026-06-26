@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 import chromadb
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from extract import get_embedding
+from scripts.extract import get_embedding
 
 load_dotenv()
 client = OpenAI()
@@ -16,8 +16,8 @@ client = OpenAI()
 st.title("Ask the Audit")
 st.caption("Ask questions grounded in the EU AI Act and your extracted findings.")
 
-FINDINGS_PATH = "outputs/all_findings_reviewed.json"
-CHROMA_PATH   = "vectorstore"
+FINDINGS_PATH = "../outputs/all_findings_reviewed.json"
+CHROMA_PATH   = "../vectorstore"
 
 # --- load data ---
 if not os.path.exists(FINDINGS_PATH):

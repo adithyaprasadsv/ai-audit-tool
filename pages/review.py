@@ -10,7 +10,7 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 st.title("Auditor Review")
 st.caption("Review LLM findings, apply overrides, and sign off. All actions are timestamped.")
 
-FINDINGS_PATH = "outputs/all_findings_reviewed.json"
+FINDINGS_PATH = "../outputs/all_findings_reviewed.json"
 
 if not os.path.exists(FINDINGS_PATH):
     st.warning("No findings found. Run the extraction pipeline first.")

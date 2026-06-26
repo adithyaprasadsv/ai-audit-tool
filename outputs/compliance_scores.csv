@@ -1,25 +1,13 @@
 document,control_id,control_name,status,severity,base_score,penalty,raw_score,weight,weighted_score,total_score,band
+Google Gemini,RC-01,Risk management system,gap,high,70.0,5.0,75.0,0.2,15.0,75.0,Adequate
+Google Gemini,RC-02,Data governance,gap,high,70.0,5.0,75.0,0.15,11.25,75.0,Adequate
+Google Gemini,RC-03,Technical documentation,gap,high,70.0,5.0,75.0,0.18,13.5,75.0,Adequate
+Google Gemini,RC-04,Transparency & instructions for use,gap,high,70.0,5.0,75.0,0.12,9.0,75.0,Adequate
+Google Gemini,RC-05,Human oversight,gap,high,70.0,5.0,75.0,0.25,18.75,75.0,Adequate
+Google Gemini,RC-06,"Accuracy, robustness & cybersecurity",gap,high,70.0,5.0,75.0,0.1,7.5,75.0,Adequate
 Claude,RC-01,Risk management system,gap,high,70.0,5.0,75.0,0.2,15.0,71.6,Adequate
 Claude,RC-02,Data governance,gap,high,70.0,5.0,75.0,0.15,11.25,71.6,Adequate
 Claude,RC-03,Technical documentation,gap,high,70.0,5.0,75.0,0.18,13.5,71.6,Adequate
 Claude,RC-04,Transparency & instructions for use,partial,medium,45.0,2.0,47.0,0.12,5.64,71.6,Adequate
 Claude,RC-05,Human oversight,gap,high,70.0,5.0,75.0,0.25,18.75,71.6,Adequate
 Claude,RC-06,"Accuracy, robustness & cybersecurity",gap,high,70.0,5.0,75.0,0.1,7.5,71.6,Adequate
-Google Gemini,RC-01,Risk management system,gap,high,70.0,5.0,75.0,0.2,15.0,70.0,Adequate
-Google Gemini,RC-02,Data governance,gap,high,70.0,5.0,75.0,0.15,11.25,70.0,Adequate
-Google Gemini,RC-03,Technical documentation,partial,medium,45.0,2.0,47.0,0.18,8.46,70.0,Adequate
-Google Gemini,RC-04,Transparency & instructions for use,gap,high,70.0,5.0,75.0,0.12,9.0,70.0,Adequate
-Google Gemini,RC-05,Human oversight,gap,high,70.0,5.0,75.0,0.25,18.75,70.0,Adequate
-Google Gemini,RC-06,"Accuracy, robustness & cybersecurity",gap,high,70.0,5.0,75.0,0.1,7.5,70.0,Adequate
-Gpt5,RC-01,Risk management system,gap,high,70.0,5.0,75.0,0.2,15.0,72.2,Adequate
-Gpt5,RC-02,Data governance,gap,high,70.0,5.0,75.0,0.15,11.25,72.2,Adequate
-Gpt5,RC-03,Technical documentation,gap,high,70.0,5.0,75.0,0.18,13.5,72.2,Adequate
-Gpt5,RC-04,Transparency & instructions for use,gap,high,70.0,5.0,75.0,0.12,9.0,72.2,Adequate
-Gpt5,RC-05,Human oversight,gap,high,70.0,5.0,75.0,0.25,18.75,72.2,Adequate
-Gpt5,RC-06,"Accuracy, robustness & cybersecurity",partial,medium,45.0,2.0,47.0,0.1,4.7,72.2,Adequate
-Meta Llama,RC-01,Risk management system,gap,high,70.0,5.0,75.0,0.2,15.0,67.2,Adequate
-Meta Llama,RC-02,Data governance,gap,high,70.0,5.0,75.0,0.15,11.25,67.2,Adequate
-Meta Llama,RC-03,Technical documentation,partial,medium,45.0,2.0,47.0,0.18,8.46,67.2,Adequate
-Meta Llama,RC-04,Transparency & instructions for use,gap,high,70.0,5.0,75.0,0.12,9.0,67.2,Adequate
-Meta Llama,RC-05,Human oversight,gap,high,70.0,5.0,75.0,0.25,18.75,67.2,Adequate
-Meta Llama,RC-06,"Accuracy, robustness & cybersecurity",partial,medium,45.0,2.0,47.0,0.1,4.7,67.2,Adequate

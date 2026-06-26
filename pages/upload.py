@@ -5,7 +5,7 @@ import os
 import sys
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from extract import load_taxonomy, run_extraction, extract_text_from_pdf, get_chroma_collection, retrieve_legal_context, build_prompt, get_confidence_score
+from scripts.extract import load_taxonomy, run_extraction, extract_text_from_pdf, get_chroma_collection, retrieve_legal_context, build_prompt, get_confidence_score
 from openai import OpenAI
 from dotenv import load_dotenv
 import tempfile
@@ -13,7 +13,7 @@ import tempfile
 load_dotenv()
 client = OpenAI()
 
-OUTPUT_DIR = "outputs"
+OUTPUT_DIR = "../outputs"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 st.title("Upload & Extract")

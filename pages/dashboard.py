@@ -8,12 +8,12 @@ import plotly.graph_objects as go
 import plotly.express as px
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from scoring import run_scoring, load_inputs
+from scripts.scoring import run_scoring, load_inputs
 
 st.title("Compliance Dashboard")
 st.caption("EU AI Act Articles 9–15 · Weighted scoring model v1.0")
 
-FINDINGS_PATH = "outputs/all_findings_reviewed.json"
+FINDINGS_PATH = "../outputs/all_findings_reviewed.json"
 
 if not os.path.exists(FINDINGS_PATH):
     st.warning("No findings found. Run the extraction pipeline first.")
@@ -29,7 +29,7 @@ if not findings:
 findings, model = load_inputs()
 scores, _       = run_scoring(), None
 
-with open("outputs/compliance_scores.json") as f:
+with open("../outputs/compliance_scores.json") as f:
     score_data = json.load(f)
 
 scores = score_data["scores"]

@@ -10,7 +10,7 @@ load_dotenv()
 client = OpenAI()
 
 CHROMA_PATH = "vectorstore"
-EU_AI_ACT_PDF = "docs/eu_ai_act.pdf"
+EU_AI_ACT_PDF = "../docs/eu_ai_act.pdf"
 
 ARTICLES_OF_INTEREST = [
     "Article 9",  "Article 10", "Article 11",
@@ -110,6 +110,6 @@ if __name__ == "__main__":
     collection = build_vectorstore()
     test_retrieval(collection)
     print("\nSprint S1 complete. Vector store ready at ./vectorstore")
-    client = chromadb.PersistentClient(path="vectorstore")
+    client = chromadb.PersistentClient(path="../vectorstore")
     collection = client.get_collection("eu_ai_act")
     print(f"Collection count: {collection.count()} chunks")

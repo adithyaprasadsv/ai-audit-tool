@@ -1,8 +1,8 @@
 # review.py
 import json
 
-INPUT = "outputs/all_findings.json"
-OUTPUT = "outputs/all_findings_reviewed.json"
+INPUT = "../outputs/all_findings.json"
+OUTPUT = "../outputs/all_findings_reviewed.json"
 
 OVERRIDES = {
     ("claude_system_card", "RC-05"): {

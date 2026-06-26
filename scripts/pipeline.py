@@ -4,8 +4,8 @@ import os
 import pandas as pd
 from extract import load_taxonomy, run_extraction
 
-DOCS_DIR = "docs"
-OUTPUT_DIR = "outputs"
+DOCS_DIR = "../docs"
+OUTPUT_DIR = "../outputs"
 
 def run_pipeline():
     taxonomy = load_taxonomy()
