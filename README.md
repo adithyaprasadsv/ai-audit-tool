@@ -20,18 +20,18 @@ Web App Access deployed through GitHub: [text](https://ai-audit-tool-poc.streaml
    text via a RAG chat interface
 
 ## Architecture
-**PDF documents**
-        ↓
-**Text extraction** (PyPDF2)
-        ↓
-**RAG retrieval** (ChromaDB + text-embedding-3-small)
-        ↓
-**LLM extraction** (GPT-4o) → *findings JSON*
-        ↓
-**Confidence scoring** → *human review flags*
-        ↓
-**Weighted compliance scoring** (custom model)
-        ↓
+**PDF documents**\
+        ↓\
+**Text extraction** (PyPDF2)\
+        ↓\
+**RAG retrieval** (ChromaDB + text-embedding-3-small)\
+        ↓\
+**LLM extraction** (GPT-4o) → *findings JSON*\
+        ↓\
+**Confidence scoring** → *human review flags*\
+        ↓\
+**Weighted compliance scoring** (custom model)\
+        ↓\
 **Streamlit app** (4 pages) + **PDF report** (ReportLab)
 
 ## Controls assessed
