@@ -5,6 +5,8 @@ documentation against EU AI Act Articles 9–15 using RAG-grounded
 LLM extraction, a custom weighted scoring model, and a human
 auditor sign-off workflow.
 
+Web App Access deployed through GitHub: [text](https://ai-audit-tool-poc.streamlit.app/)
+
 ## What it does
 
 1. **Extracts** compliance findings from AI system documents (PDFs)
@@ -20,27 +22,27 @@ auditor sign-off workflow.
 ## Architecture
 PDF documents
 
-↓
+        ↓
 
 Text extraction (PyPDF2)
 
-↓
+        ↓
 
 RAG retrieval (ChromaDB + text-embedding-3-small)
 
-↓
+        ↓
 
 LLM extraction (GPT-4o) → findings JSON
 
-↓
+        ↓
 
 Confidence scoring → human review flags
 
-↓
+        ↓
 
 Weighted compliance scoring (custom model)
 
-↓
+        ↓
 
 Streamlit app (4 pages) + PDF report (ReportLab)
 
