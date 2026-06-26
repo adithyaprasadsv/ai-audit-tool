@@ -1,0 +1,271 @@
+{
+  "generated": "2026-06-26",
+  "model_version": "1.0",
+  "author": "AP",
+  "scores": {
+    "claude_system_card": {
+      "total_score": 71.6,
+      "band": "Adequate",
+      "controls": {
+        "RC-01": {
+          "control_name": "Risk management system",
+          "status": "gap",
+          "severity": "high",
+          "base_score": 70.0,
+          "penalty": 5.0,
+          "raw_score": 75.0,
+          "weight": 0.2,
+          "weighted_score": 15.0
+        },
+        "RC-02": {
+          "control_name": "Data governance",
+          "status": "gap",
+          "severity": "high",
+          "base_score": 70.0,
+          "penalty": 5.0,
+          "raw_score": 75.0,
+          "weight": 0.15,
+          "weighted_score": 11.25
+        },
+        "RC-03": {
+          "control_name": "Technical documentation",
+          "status": "gap",
+          "severity": "high",
+          "base_score": 70.0,
+          "penalty": 5.0,
+          "raw_score": 75.0,
+          "weight": 0.18,
+          "weighted_score": 13.5
+        },
+        "RC-04": {
+          "control_name": "Transparency & instructions for use",
+          "status": "partial",
+          "severity": "medium",
+          "base_score": 45.0,
+          "penalty": 2.0,
+          "raw_score": 47.0,
+          "weight": 0.12,
+          "weighted_score": 5.64
+        },
+        "RC-05": {
+          "control_name": "Human oversight",
+          "status": "gap",
+          "severity": "high",
+          "base_score": 70.0,
+          "penalty": 5.0,
+          "raw_score": 75.0,
+          "weight": 0.25,
+          "weighted_score": 18.75
+        },
+        "RC-06": {
+          "control_name": "Accuracy, robustness & cybersecurity",
+          "status": "gap",
+          "severity": "high",
+          "base_score": 70.0,
+          "penalty": 5.0,
+          "raw_score": 75.0,
+          "weight": 0.1,
+          "weighted_score": 7.5
+        }
+      }
+    },
+    "google_gemini_card": {
+      "total_score": 70.0,
+      "band": "Adequate",
+      "controls": {
+        "RC-01": {
+          "control_name": "Risk management system",
+          "status": "gap",
+          "severity": "high",
+          "base_score": 70.0,
+          "penalty": 5.0,
+          "raw_score": 75.0,
+          "weight": 0.2,
+          "weighted_score": 15.0
+        },
+        "RC-02": {
+          "control_name": "Data governance",
+          "status": "gap",
+          "severity": "high",
+          "base_score": 70.0,
+          "penalty": 5.0,
+          "raw_score": 75.0,
+          "weight": 0.15,
+          "weighted_score": 11.25
+        },
+        "RC-03": {
+          "control_name": "Technical documentation",
+          "status": "partial",
+          "severity": "medium",
+          "base_score": 45.0,
+          "penalty": 2.0,
+          "raw_score": 47.0,
+          "weight": 0.18,
+          "weighted_score": 8.46
+        },
+        "RC-04": {
+          "control_name": "Transparency & instructions for use",
+          "status": "gap",
+          "severity": "high",
+          "base_score": 70.0,
+          "penalty": 5.0,
+          "raw_score": 75.0,
+          "weight": 0.12,
+          "weighted_score": 9.0
+        },
+        "RC-05": {
+          "control_name": "Human oversight",
+          "status": "gap",
+          "severity": "high",
+          "base_score": 70.0,
+          "penalty": 5.0,
+          "raw_score": 75.0,
+          "weight": 0.25,
+          "weighted_score": 18.75
+        },
+        "RC-06": {
+          "control_name": "Accuracy, robustness & cybersecurity",
+          "status": "gap",
+          "severity": "high",
+          "base_score": 70.0,
+          "penalty": 5.0,
+          "raw_score": 75.0,
+          "weight": 0.1,
+          "weighted_score": 7.5
+        }
+      }
+    },
+    "gpt5_system_card": {
+      "total_score": 72.2,
+      "band": "Adequate",
+      "controls": {
+        "RC-01": {
+          "control_name": "Risk management system",
+          "status": "gap",
+          "severity": "high",
+          "base_score": 70.0,
+          "penalty": 5.0,
+          "raw_score": 75.0,
+          "weight": 0.2,
+          "weighted_score": 15.0
+        },
+        "RC-02": {
+          "control_name": "Data governance",
+          "status": "gap",
+          "severity": "high",
+          "base_score": 70.0,
+          "penalty": 5.0,
+          "raw_score": 75.0,
+          "weight": 0.15,
+          "weighted_score": 11.25
+        },
+        "RC-03": {
+          "control_name": "Technical documentation",
+          "status": "gap",
+          "severity": "high",
+          "base_score": 70.0,
+          "penalty": 5.0,
+          "raw_score": 75.0,
+          "weight": 0.18,
+          "weighted_score": 13.5
+        },
+        "RC-04": {
+          "control_name": "Transparency & instructions for use",
+          "status": "gap",
+          "severity": "high",
+          "base_score": 70.0,
+          "penalty": 5.0,
+          "raw_score": 75.0,
+          "weight": 0.12,
+          "weighted_score": 9.0
+        },
+        "RC-05": {
+          "control_name": "Human oversight",
+          "status": "gap",
+          "severity": "high",
+          "base_score": 70.0,
+          "penalty": 5.0,
+          "raw_score": 75.0,
+          "weight": 0.25,
+          "weighted_score": 18.75
+        },
+        "RC-06": {
+          "control_name": "Accuracy, robustness & cybersecurity",
+          "status": "partial",
+          "severity": "medium",
+          "base_score": 45.0,
+          "penalty": 2.0,
+          "raw_score": 47.0,
+          "weight": 0.1,
+          "weighted_score": 4.7
+        }
+      }
+    },
+    "meta_llama_card": {
+      "total_score": 67.2,
+      "band": "Adequate",
+      "controls": {
+        "RC-01": {
+          "control_name": "Risk management system",
+          "status": "gap",
+          "severity": "high",
+          "base_score": 70.0,
+          "penalty": 5.0,
+          "raw_score": 75.0,
+          "weight": 0.2,
+          "weighted_score": 15.0
+        },
+        "RC-02": {
+          "control_name": "Data governance",
+          "status": "gap",
+          "severity": "high",
+          "base_score": 70.0,
+          "penalty": 5.0,
+          "raw_score": 75.0,
+          "weight": 0.15,
+          "weighted_score": 11.25
+        },
+        "RC-03": {
+          "control_name": "Technical documentation",
+          "status": "partial",
+          "severity": "medium",
+          "base_score": 45.0,
+          "penalty": 2.0,
+          "raw_score": 47.0,
+          "weight": 0.18,
+          "weighted_score": 8.46
+        },
+        "RC-04": {
+          "control_name": "Transparency & instructions for use",
+          "status": "gap",
+          "severity": "high",
+          "base_score": 70.0,
+          "penalty": 5.0,
+          "raw_score": 75.0,
+          "weight": 0.12,
+          "weighted_score": 9.0
+        },
+        "RC-05": {
+          "control_name": "Human oversight",
+          "status": "gap",
+          "severity": "high",
+          "base_score": 70.0,
+          "penalty": 5.0,
+          "raw_score": 75.0,
+          "weight": 0.25,
+          "weighted_score": 18.75
+        },
+        "RC-06": {
+          "control_name": "Accuracy, robustness & cybersecurity",
+          "status": "partial",
+          "severity": "medium",
+          "base_score": 45.0,
+          "penalty": 2.0,
+          "raw_score": 47.0,
+          "weight": 0.1,
+          "weighted_score": 4.7
+        }
+      }
+    }
+  }
+}

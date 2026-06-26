@@ -1,0 +1,39 @@
+{
+  "model_version": "1.0",
+  "author": "AP",
+  "description": "Weighted compliance scoring model for EU AI Act Articles 9-15",
+  "rationale": {
+    "RC-05": "Human oversight weighted highest — Article 14 is the most operationally critical control for deployed AI systems",
+    "RC-01": "Risk management second — absence of a lifecycle process undermines all other controls",
+    "RC-03": "Technical documentation third — regulators cannot assess what is not documented",
+    "RC-02": "Data governance fourth — foundational but often partially addressed in public cards",
+    "RC-06": "Accuracy and robustness fifth — often present in benchmark form even if incomplete",
+    "RC-04": "Transparency lowest weight — most providers address this at surface level"
+  },
+  "weights": {
+    "RC-01": 0.20,
+    "RC-02": 0.15,
+    "RC-03": 0.18,
+    "RC-04": 0.12,
+    "RC-05": 0.25,
+    "RC-06": 0.10
+  },
+  "status_scores": {
+    "compliant":    0.00,
+    "partial":      0.45,
+    "gap":          0.70,
+    "not_assessed": 0.00
+  },
+  "severity_penalty": {
+      "high":   0.05,
+      "medium": 0.02,
+      "low":    0.00,
+      "none":   0.00
+  },
+  "bands": [
+    {"min": 80, "max": 100, "label": "Strong",      "color": "#085041"},
+    {"min": 60, "max": 79,  "label": "Adequate",    "color": "#633806"},
+    {"min": 40, "max": 59,  "label": "Weak",        "color": "#993C1D"},
+    {"min": 0,  "max": 39,  "label": "Critical",    "color": "#712B13"}
+  ]
+}

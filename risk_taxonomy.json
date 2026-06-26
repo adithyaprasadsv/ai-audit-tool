@@ -1,0 +1,72 @@
+{
+  "taxonomy_version": "1.0",
+  "source": "EU AI Act Articles 9-15",
+  "risk_categories": [
+    {
+      "id": "RC-01",
+      "name": "Risk management system",
+      "article": "Article 9",
+      "description": "Does the system have a documented, continuous risk management process covering the full lifecycle?",
+      "audit_questions": [
+        "Is there a risk management plan documented?",
+        "Are risks identified, estimated, and evaluated?",
+        "Are residual risks communicated to users?"
+      ]
+    },
+    {
+      "id": "RC-02",
+      "name": "Data governance",
+      "article": "Article 10",
+      "description": "Are training, validation, and test datasets governed with documented practices?",
+      "audit_questions": [
+        "Are data sources and collection methods documented?",
+        "Are known biases in data identified and addressed?",
+        "Is data quality assessed before use?"
+      ]
+    },
+    {
+      "id": "RC-03",
+      "name": "Technical documentation",
+      "article": "Article 11",
+      "description": "Is there sufficient technical documentation for a regulator to assess compliance?",
+      "audit_questions": [
+        "Is system purpose and intended use clearly described?",
+        "Are model architecture and training methodology documented?",
+        "Are performance metrics and limitations disclosed?"
+      ]
+    },
+    {
+      "id": "RC-04",
+      "name": "Transparency & instructions for use",
+      "article": "Article 13",
+      "description": "Is the system sufficiently transparent to allow users to interpret outputs correctly?",
+      "audit_questions": [
+        "Are capabilities and limitations disclosed to users?",
+        "Are instructions for use provided?",
+        "Is the system's intended purpose clearly communicated?"
+      ]
+    },
+    {
+      "id": "RC-05",
+      "name": "Human oversight",
+      "article": "Article 14",
+      "description": "Can humans effectively oversee, intervene, and override the system?",
+      "audit_questions": [
+        "Are human override mechanisms documented?",
+        "Can operators stop or pause the system?",
+        "Are outputs interpretable enough for human review?"
+      ]
+    },
+    {
+      "id": "RC-06",
+      "name": "Accuracy, robustness & cybersecurity",
+      "article": "Article 15",
+      "description": "Does the system maintain performance under normal and adversarial conditions?",
+      "audit_questions": [
+        "Are accuracy metrics reported across relevant subgroups?",
+        "Is robustness to input variations tested?",
+        "Are cybersecurity risks to the model addressed?"
+      ]
+    }
+  ]
+}

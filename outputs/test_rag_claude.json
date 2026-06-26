@@ -1,0 +1,74 @@
+[
+  {
+    "control_id": "RC-01",
+    "control_name": "Risk management system",
+    "status": "gap",
+    "severity": "high",
+    "finding": "Document lacks direct evidence of a documented, continuous risk management process covering the full lifecycle.",
+    "evidence": "none found",
+    "legal_basis": "Article 9 requires a risk management system to be established, implemented, documented and maintained in relation to high-risk AI systems.",
+    "llm_recommendation": "Provide a detailed, self-contained risk management plan within the document, covering identification, estimation, evaluation, and communication of risks.",
+    "auditor_recommendation": "",
+    "auditor_reviewed": false
+  },
+  {
+    "control_id": "RC-02",
+    "control_name": "Data governance",
+    "status": "gap",
+    "severity": "high",
+    "finding": "Document lacks direct evidence of data governance practices and redirects to external research papers.",
+    "evidence": "For comprehensive insights into our training and evaluation methodologies, we invite you to explore our research papers.",
+    "legal_basis": "Article 10 requires training, validation, and testing data sets to be governed with documented practices.",
+    "llm_recommendation": "Provide self-contained documentation of data governance practices within the document.",
+    "auditor_recommendation": "",
+    "auditor_reviewed": false
+  },
+  {
+    "control_id": "RC-03",
+    "control_name": "Technical documentation",
+    "status": "gap",
+    "severity": "high",
+    "finding": "Document provides an overview but redirects to external research papers for comprehensive insights.",
+    "evidence": "This model card is not intended to encompass all of our research. For comprehensive insights into our training and evaluation methodologies, we invite you to explore our research papers.",
+    "legal_basis": "Article 11 requires technical documentation to be drawn up before the system is placed on the market.",
+    "llm_recommendation": "Ensure that all necessary technical documentation is included within the document itself, without redirecting to external sources.",
+    "auditor_recommendation": "",
+    "auditor_reviewed": false
+  },
+  {
+    "control_id": "RC-04",
+    "control_name": "Transparency & instructions for use",
+    "status": "gap",
+    "severity": "high",
+    "finding": "The document provides general descriptions but redirects to external sources for comprehensive insights.",
+    "evidence": "For comprehensive insights into our training and evaluation methodologies, we invite you to explore our research papers.",
+    "legal_basis": "Article 13 requires high-risk AI systems to be accompanied by instructions for use that include concise, complete, correct and clear information that is relevant, accessible and comprehensible to deployers.",
+    "llm_recommendation": "Include detailed instructions for use directly within the document to ensure compliance with Article 13.",
+    "auditor_recommendation": "",
+    "auditor_reviewed": false
+  },
+  {
+    "control_id": "RC-05",
+    "control_name": "Human oversight",
+    "status": "gap",
+    "severity": "high",
+    "finding": "Document lacks explicit documentation of human oversight mechanisms and redirects to external sources.",
+    "evidence": "For comprehensive insights into our training and evaluation methodologies, we invite you to explore our research papers.",
+    "legal_basis": "Article 14 requires high-risk AI systems to allow human intervention and override.",
+    "llm_recommendation": "Provide detailed documentation within the document itself on human oversight mechanisms, including override capabilities.",
+    "auditor_recommendation": "",
+    "auditor_reviewed": false
+  },
+  {
+    "control_id": "RC-06",
+    "control_name": "Accuracy, robustness & cybersecurity",
+    "status": "gap",
+    "severity": "high",
+    "finding": "Document lacks direct evidence of accuracy metrics across subgroups, robustness testing, and cybersecurity measures.",
+    "evidence": "none found",
+    "legal_basis": "Article 15 requires high-risk AI systems to achieve appropriate levels of accuracy, robustness, and cybersecurity.",
+    "llm_recommendation": "Provide detailed documentation on accuracy metrics across relevant subgroups, robustness testing results, and cybersecurity measures implemented.",
+    "auditor_recommendation": "",
+    "auditor_reviewed": false
+  }
+]
