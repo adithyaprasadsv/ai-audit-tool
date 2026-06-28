@@ -13,7 +13,11 @@ from dotenv import load_dotenv
 
 from openai import OpenAI
 load_dotenv()
-openai_key = st.secrets.get("OPENAI_API_KEY") or os.getenv("OPENAI_API_KEY")
+try:
+    openai_key = st.secrets.get("OPENAI_API_KEY")
+except:
+    openai_key = os.getenv("OPENAI_API_KEY")
+
 client = OpenAI(api_key=openai_key)
 
 st.title("Auditor Review")
@@ -21,7 +25,7 @@ st.caption("Review LLM findings, apply overrides, and sign off. All actions are 
 
 # FINDINGS_PATH = "../outputs/all_findings_reviewed.json"
 
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 FINDINGS_PATH = os.path.join(BASE_DIR, "outputs/all_findings_reviewed.json")
 CHROMA_PATH   = os.path.join(BASE_DIR, "vectorstore")

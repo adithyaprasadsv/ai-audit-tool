@@ -18,7 +18,10 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-openai_key = st.secrets.get("OPENAI_API_KEY") or os.getenv("OPENAI_API_KEY")
+try:
+    openai_key = st.secrets.get("OPENAI_API_KEY")
+except:
+    openai_key = os.getenv("OPENAI_API_KEY")
 client = OpenAI(api_key=openai_key)
 
 st.title("Ask the Audit")
@@ -27,7 +30,7 @@ st.caption("Ask questions grounded in the EU AI Act and your extracted findings.
 # FINDINGS_PATH = "outputs/all_findings_reviewed.json"
 # CHROMA_PATH   = "vectorstore"
 
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 FINDINGS_PATH = os.path.join(BASE_DIR, "outputs/all_findings_reviewed.json")
 CHROMA_PATH   = os.path.join(BASE_DIR, "vectorstore")

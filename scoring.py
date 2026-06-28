@@ -4,7 +4,7 @@ import pandas as pd
 from datetime import date
 
 FINDINGS_PATH = "outputs/all_findings_reviewed.json"
-MODEL_PATH    = "scoring_model.json"
+MODEL_PATH    = "config/scoring_model.json"
 OUTPUT_JSON   = "outputs/compliance_scores.json"
 OUTPUT_CSV    = "outputs/compliance_scores.csv"
 

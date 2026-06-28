@@ -9,7 +9,11 @@ from openai import OpenAI
 
 load_dotenv()
 
-openai_key = st.secrets.get("OPENAI_API_KEY") or os.getenv("OPENAI_API_KEY")
+try:
+    openai_key = st.secrets.get("OPENAI_API_KEY")
+except:
+    openai_key = os.getenv("OPENAI_API_KEY")
+
 client = OpenAI(api_key=openai_key)
 
 st.set_page_config(
@@ -34,7 +38,7 @@ page = st.sidebar.radio("Navigation", list(pages.keys()))
 st.sidebar.divider()
 st.sidebar.caption("Model: gpt-4o · RAG: ChromaDB\nScoring: weighted v1.0 · Author: AP")
 
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 os.makedirs(os.path.join(BASE_DIR, "outputs"), exist_ok=True)
 
 if page == "Upload & Extract":
