@@ -1,4 +1,4 @@
-# pages/chat.py
+# views/chat.py
 import streamlit as st
 import json
 import os

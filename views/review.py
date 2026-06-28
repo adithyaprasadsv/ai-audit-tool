@@ -1,4 +1,4 @@
-# pages/review.py
+# views/review.py
 import streamlit as st
 import json
 import os

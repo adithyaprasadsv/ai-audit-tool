@@ -1,4 +1,4 @@
-# pages/upload.py
+# views/upload.py
 import streamlit as st
 import json
 import os

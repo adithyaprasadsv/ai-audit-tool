@@ -22,6 +22,11 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded"
 )
+st.markdown("""
+    <style>
+    [data-testid="stSidebarNav"] { display: none; }
+    </style>
+""", unsafe_allow_html=True)
 
 st.sidebar.title("AI Governance Audit")
 st.sidebar.caption("EU AI Act · Articles 9–15")
@@ -42,10 +47,10 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 os.makedirs(os.path.join(BASE_DIR, "outputs"), exist_ok=True)
 
 if page == "Upload & Extract":
-    exec(open(os.path.join(BASE_DIR, "pages/upload.py"), encoding="utf-8").read())
+    exec(open(os.path.join(BASE_DIR, "views/upload.py"), encoding="utf-8").read())
 elif page == "Compliance Dashboard":
-    exec(open(os.path.join(BASE_DIR, "pages/dashboard.py"), encoding="utf-8").read())
+    exec(open(os.path.join(BASE_DIR, "views/dashboard.py"), encoding="utf-8").read())
 elif page == "Auditor Review":
-    exec(open(os.path.join(BASE_DIR, "pages/review.py"), encoding="utf-8").read())
+    exec(open(os.path.join(BASE_DIR, "views/review.py"), encoding="utf-8").read())
 elif page == "Ask the Audit":
-    exec(open(os.path.join(BASE_DIR, "pages/chat.py"), encoding="utf-8").read())
+    exec(open(os.path.join(BASE_DIR, "views/chat.py"), encoding="utf-8").read())
