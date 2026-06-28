@@ -9,9 +9,9 @@ from dotenv import load_dotenv
 load_dotenv()
 client = OpenAI()
 
-CHROMA_PATH = "../vectorstore"
+CHROMA_PATH = "vectorstore"
 
-def load_taxonomy(path="../config/risk_taxonomy.json"):
+def load_taxonomy(path="risk_taxonomy.json"):
     with open(path) as f:
         return json.load(f)
 

@@ -5,16 +5,30 @@ import os
 import sys
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from scripts.extract import load_taxonomy, run_extraction, extract_text_from_pdf, get_chroma_collection, retrieve_legal_context, build_prompt, get_confidence_score
+from extract import load_taxonomy, run_extraction, extract_text_from_pdf, get_chroma_collection, retrieve_legal_context, build_prompt, get_confidence_score
 from openai import OpenAI
 from dotenv import load_dotenv
 import tempfile
 
 load_dotenv()
-client = OpenAI()
 
-OUTPUT_DIR = "../outputs"
+import streamlit as st
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+openai_key = st.secrets.get("OPENAI_API_KEY") or os.getenv("OPENAI_API_KEY")
+client = OpenAI(api_key=openai_key)
+
+OUTPUT_DIR = "outputs"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
+
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+FINDINGS_PATH = os.path.join(BASE_DIR, "outputs/all_findings_reviewed.json")
+CHROMA_PATH   = os.path.join(BASE_DIR, "vectorstore")
+SCORES_PATH   = os.path.join(BASE_DIR, "outputs/compliance_scores.json")
 
 st.title("Upload & Extract")
 st.caption("Upload an AI system document and run the EU AI Act compliance extraction pipeline.")

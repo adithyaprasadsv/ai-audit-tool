@@ -7,10 +7,26 @@ from datetime import datetime
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
+import streamlit as st
+import os
+from dotenv import load_dotenv
+
+from openai import OpenAI
+load_dotenv()
+openai_key = st.secrets.get("OPENAI_API_KEY") or os.getenv("OPENAI_API_KEY")
+client = OpenAI(api_key=openai_key)
+
 st.title("Auditor Review")
 st.caption("Review LLM findings, apply overrides, and sign off. All actions are timestamped.")
 
-FINDINGS_PATH = "../outputs/all_findings_reviewed.json"
+# FINDINGS_PATH = "../outputs/all_findings_reviewed.json"
+
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+FINDINGS_PATH = os.path.join(BASE_DIR, "outputs/all_findings_reviewed.json")
+CHROMA_PATH   = os.path.join(BASE_DIR, "vectorstore")
+SCORES_PATH   = os.path.join(BASE_DIR, "outputs/compliance_scores.json")
+
 
 if not os.path.exists(FINDINGS_PATH):
     st.warning("No findings found. Run the extraction pipeline first.")

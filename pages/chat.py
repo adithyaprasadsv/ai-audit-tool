@@ -8,16 +8,30 @@ from dotenv import load_dotenv
 import chromadb
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from scripts.extract import get_embedding
+from extract import get_embedding
 
 load_dotenv()
-client = OpenAI()
+
+import streamlit as st
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+openai_key = st.secrets.get("OPENAI_API_KEY") or os.getenv("OPENAI_API_KEY")
+client = OpenAI(api_key=openai_key)
 
 st.title("Ask the Audit")
 st.caption("Ask questions grounded in the EU AI Act and your extracted findings.")
 
-FINDINGS_PATH = "../outputs/all_findings_reviewed.json"
-CHROMA_PATH   = "../vectorstore"
+# FINDINGS_PATH = "outputs/all_findings_reviewed.json"
+# CHROMA_PATH   = "vectorstore"
+
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+FINDINGS_PATH = os.path.join(BASE_DIR, "outputs/all_findings_reviewed.json")
+CHROMA_PATH   = os.path.join(BASE_DIR, "vectorstore")
+SCORES_PATH   = os.path.join(BASE_DIR, "outputs/compliance_scores.json")
 
 # --- load data ---
 if not os.path.exists(FINDINGS_PATH):

@@ -1,12 +1,12 @@
 
 # test_single.py
-from scripts.extract import load_taxonomy, run_extraction
+from extract import load_taxonomy, run_extraction
 import json
 
 taxonomy = load_taxonomy()
 
 print("Running extraction on: meta_llama_card.pdf\n")
-findings = run_extraction("../docs/claude_system_card.pdf", taxonomy)
+findings = run_extraction("docs/claude_system_card.pdf", taxonomy)
 
 if findings:
     print(f"Extracted {len(findings)} findings:\n")
@@ -19,6 +19,6 @@ if findings:
         print(f"  Evidence: {f['evidence'][:120]}...")
         print()
 
-    with open("../outputs/test_claude_system_card.json", "w") as out:
+    with open("outputs/test_claude_system_card.json", "w") as out:
         json.dump(findings, out, indent=2)
     print("Saved to outputs/claude_system_card.json")
